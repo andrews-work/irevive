@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Craft My Strength</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FFFFFF',
+                        secondary: '#000000',
+                        accent: '#D4AF37',
+                        accentDark: '#B8860B',
+                        darkBg: '#0A0A0A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-primary text-secondary font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-primary/90 backdrop-blur-sm border-b border-accentDark">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <span class="text-2xl font-bold text-accent">CRAFTMYSTRENGTH</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-secondary hover:text-accent transition">Home</a>
+                    <a href="product.html" class="text-secondary hover:text-accent transition">I-Revive</a>
+                    <a href="about.html" class="text-accent hover:underline">About</a>
+                    <a href="index.html#preorder" class="text-secondary hover:text-accent transition">Pre-Order</a>
+                </div>
+                <button class="md:hidden text-secondary" id="mobile-menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden fixed inset-0 z-40 bg-primary/95 backdrop-blur-sm pt-20 px-6" id="mobile-menu">
+        <div class="flex flex-col space-y-6 text-center text-2xl">
+            <a href="index.html" class="py-3 border-b border-accent/20">Home</a>
+            <a href="product.html" class="py-3 border-b border-accent/20">I-Revive</a>
+            <a href="about.html" class="py-3 border-b border-accent/20">About</a>
+            <a href="index.html#preorder" class="mt-8 bg-accent text-primary py-3 rounded-full font-medium">Pre-Order</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="py-24 bg-primary">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl text-accent font-bold mb-6">Redefining Footwear for Human Health</h1>
+                <p class="text-xl text-gray-300">Where medical science meets wearable innovation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="py-20 bg-primary">
+        <div class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto">
+                <div class="mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Our <span class="text-accent">Mission</span></h2>
+                    <p class="text-xl text-gray-300 leading-relaxed">
+                        At <span class="font-bold text-secondary">Craft My Strength</span>, we're reimagining the role of footwear in <span class="italic text-accent">human health</span>. While traditional shoes <span class="text-gray-400">support your steps</span>, we go <span class="font-bold text-accent">deeper</span> — into <span class="underline decoration-accent">circulation</span>, <span class="underline decoration-accent">recovery</span>, and <span class="underline decoration-accent">muscular wellness</span>.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="images/lab-research.jpg" alt="Lab Research" class="w-full rounded-xl shadow-xl border border-accent/20">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-accent">Beyond <span class="italic">Footwear</span></h3>
+                        <p class="text-gray-300 mb-6">
+                            We're building a <span class="font-semibold text-secondary">wearable wellness ecosystem</span> that empowers people to <span class="text-accent font-medium">recover faster</span>, <span class="text-accent font-medium">move better</span>, and <span class="text-accent font-medium">live stronger</span>. Whether you're an <span class="italic">athlete</span>, <span class="italic">traveler</span>, or <span class="italic">desk-bound professional</span>, we bring <span class="font-bold">medical-grade recovery tools</span> into your daily life.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start group">
+                                <span class="text-accent mr-3 transform group-hover:scale-110 transition">✓</span>
+                                <span class="group-hover:text-secondary transition">Driven by <span class="font-bold">clinical research</span></span>
+                            </li>
+                            <li class="flex items-start group">
+                                <span class="text-accent mr-3 transform group-hover:scale-110 transition">✓</span>
+                                <span class="group-hover:text-secondary transition">Backed by <span class="italic">orthopedic experts</span></span>
+                            </li>
+                            <li class="flex items-start group">
+                                <span class="text-accent mr-3 transform group-hover:scale-110 transition">✓</span>
+                                <span class="group-hover:text-secondary transition">Focused on <span class="underline">measurable impact</span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Values -->
+<section class="py-20 bg-primary">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Our <span class="text-accent">Values</span></h2>
+            <p class="text-xl text-gray-300">The core pillars of our creativity</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <!-- Science-Led Innovation -->
+            <div class="p-8 rounded-xl bg-primary border border-gray-800 hover:border-accent/50 transition-all">
+                <div class="flex justify-center mb-4">
+                    <img src="https://imp.tpx.mybluehost.me/website_64609d7e/wp-content/themes/creativity-hub/assets/images/icon-briefcase.png" 
+                         alt="Science Icon" 
+                         class="w-12 h-12 object-contain">
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-center text-accent">Science-Led Innovation</h3>
+                <p class="text-gray-300 text-center">
+                    Every product we design starts with clinical research and real physiological need. We blend biomechanics, medical insight, and wearable tech to create solutions that actually work — not just look good.
+                </p>
+            </div>
+            
+            <!-- Purpose-Driven Design -->
+            <div class="p-8 rounded-xl bg-primary border border-gray-800 hover:border-accent/50 transition-all">
+                <div class="flex justify-center mb-4">
+                    <img src="https://imp.tpx.mybluehost.me/website_64609d7e/wp-content/themes/creativity-hub/assets/images/icon-shootingstar.png" 
+                         alt="Design Icon" 
+                         class="w-12 h-12 object-contain">
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-center text-accent">Purpose-Driven Design</h3>
+                <p class="text-gray-300 text-center">
+                    Form follows function. Our designs aren't just stylish — they're built to serve a meaningful purpose: restoring mobility, enhancing recovery, and empowering better movement for every lifestyle.
+                </p>
+            </div>
+            
+            <!-- Everyday Human Impact -->
+            <div class="p-8 rounded-xl bg-primary border border-gray-800 hover:border-accent/50 transition-all">
+                <div class="flex justify-center mb-4">
+                    <img src="https://imp.tpx.mybluehost.me/website_64609d7e/wp-content/themes/creativity-hub/assets/images/icon-idcard.png" 
+                         alt="Impact Icon" 
+                         class="w-12 h-12 object-contain">
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-center text-accent">Everyday Human Impact</h3>
+                <p class="text-gray-300 text-center">
+                    We create for real people — athletes, travelers, seniors, professionals. Our products fit naturally into daily life, supporting health and strength without disruption.
+                </p>
+            </div>
+            
+            <!-- Future-Focused Thinking -->
+            <div class="p-8 rounded-xl bg-primary border border-gray-800 hover:border-accent/50 transition-all">
+                <div class="flex justify-center mb-4">
+                    <img src="https://imp.tpx.mybluehost.me/website_64609d7e/wp-content/themes/creativity-hub/assets/images/icon-chart.png" 
+                         alt="Future Icon" 
+                         class="w-12 h-12 object-contain">
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-center text-accent">Future-Focused Thinking</h3>
+                <p class="text-gray-300 text-center">
+                    We don't just follow trends — we build what the future of wellness needs. From real-time biofeedback to intelligent recovery, we pioneer solutions that evolve with you.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Founder's Message -->
+<section class="py-20 bg-primary">
+    <div class="container mx-auto px-6">
+        <div class="max-w-5xl mx-auto bg-primary rounded-xl p-12 border border-accent/20">
+            <div class="mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-accent">A Message From Our Founder</h2>
+                <div class="h-1 w-24 bg-accent mb-8"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 items-start">
+                <div class="md:col-span-2 order-2 md:order-1">
+                    <blockquote class="text-xl italic text-gray-300 leading-relaxed mb-8">
+                        "At Craft My Strength, we're not just designing footwear — we're redefining recovery. As someone who has experienced the limitations of passive wellness solutions, I set out to create a product that actively supports the human body. I-Revive is the result of years of research, development, and collaboration with medical experts. It's smart, wearable technology that works silently while you move — or even when you don't. Our mission is simple: to empower people to take control of their strength, recovery, and overall well-being, starting from the ground up."
+                    </blockquote>
+                    <div class="text-right">
+                        <p class="text-2xl font-bold text-secondary">Vivek Midha</p>
+                        <p class="text-accent">Founder & CEO, Craft My Strength</p>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <div class="w-full h-64 md:h-80 rounded-xl overflow-hidden border-2 border-accent/30">
+                        <img src="images/vivek-portrait.jpg" alt="Vivek Midha" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team -->
+<section class="py-20 bg-primary">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Meet The Team</h2>
+            <p class="text-xl text-gray-300">Experts at the intersection of health and technology</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+            <!-- Team Member 1 -->
+            <div class="bg-primary rounded-xl p-8 border border-gray-800">
+                <div class="w-40 h-40 mx-auto mb-6 rounded-full bg-gray-800 overflow-hidden border-2 border-accent">
+                    <img src="images/vivek.jpg" alt="Vivek Midha" class="w-full h-full object-cover">
+                </div>
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold mb-1">Vivek Midha</h3>
+                    <p class="text-accent mb-4 text-lg">Founder & CEO</p>
+                    <p class="text-gray-300 text-left">
+                        A trailblazer in wearable innovation, Vivek brings 30+ years of leadership in apparel and tech. 
+                        With an EMBA from Kellogg-HKUST and a passion for biomechanics, he leads Craft My Strength with 
+                        a focus on purposeful design, wellness tech, and global scale.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Team Member 2 -->
+            <div class="bg-primary rounded-xl p-8 border border-gray-800">
+                <div class="w-40 h-40 mx-auto mb-6 rounded-full bg-gray-800 overflow-hidden border-2 border-accent">
+                    <img src="images/venkat.jpg" alt="Venkat Paditham" class="w-full h-full object-cover">
+                </div>
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold mb-1">Venkat Paditham</h3>
+                    <p class="text-accent mb-4 text-lg">Co-Founder & VP Strategy</p>
+                    <p class="text-gray-300 text-left">
+                        Venkat combines strategic foresight with technical precision. With over 25 years in IT and operations, 
+                        and a Chancellor's Award from VIT, he guides the company's strategic roadmap and ensures seamless 
+                        product execution.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Team Member 3 -->
+            <div class="bg-primary rounded-xl p-8 border border-gray-800">
+                <div class="w-40 h-40 mx-auto mb-6 rounded-full bg-gray-800 overflow-hidden border-2 border-accent">
+                    <img src="images/dr-jatin.jpg" alt="Dr. Jatin Maheshwari" class="w-full h-full object-cover">
+                </div>
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold mb-1">Dr. Jatin Maheshwari</h3>
+                    <p class="text-accent mb-4 text-lg">Director of Exercise & Fitness</p>
+                    <p class="text-gray-300 text-left">
+                        An elite biomechanics specialist, Dr. Maheshwari has trained Olympic and national athletes. 
+                        He oversees our movement science integration, recovery protocols, and product safety testing — 
+                        ensuring every user benefits from true physiological performance support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-primary">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Experience I-Revive?</h2>
+                <a href="index.html#preorder" class="inline-block bg-accent text-primary px-8 py-4 rounded-full font-medium hover:bg-accentDark transition">
+                    Join the Waitlist
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-primary">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-xl font-bold text-accent">CRAFTMYSTRENGTH</span>
+                </div>
+                <div class="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 text-center md:text-left">
+                    <a href="#" class="text-gray-400 hover:text-secondary transition">Privacy</a>
+                    <a href="#" class="text-gray-400 hover:text-secondary transition">Terms</a>
+                    <a href="contact.html" class="text-gray-400 hover:text-secondary transition">Contact</a>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p>© 2025 Craft My Strength. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

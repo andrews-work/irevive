@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft My Strength | Smart Recovery Footwear</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#000000',
+                        secondary: '#FFFFFF',
+                        accent: '#D4AF37',
+                        accentDark: '#B8860B',
+                        darkBg: '#0A0A0A'
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body class="bg-primary text-secondary font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-primary/90 backdrop-blur-sm border-b border-accentDark">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <span class="text-2xl font-bold text-accent">CRAFT MY STRENGTH</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-secondary hover:text-accent transition">Home</a>
+                    <a href="product.html" class="text-secondary hover:text-accent transition">i-Revive</a>
+                    <a href="about.html" class="text-secondary hover:text-accent transition">About</a>
+                    <a href="#preorder" class="text-accent hover:underline">Pre-Order</a>
+                </div>
+                <button class="md:hidden text-secondary" id="mobile-menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden fixed inset-0 z-40 bg-primary/95 backdrop-blur-sm pt-20 px-6" id="mobile-menu">
+        <div class="flex flex-col space-y-6 text-center text-2xl">
+            <a href="index.html" class="py-3 border-b border-accent/20">Home</a>
+            <a href="product.html" class="py-3 border-b border-accent/20">i-Revive</a>
+            <a href="about.html" class="py-3 border-b border-accent/20">About</a>
+            <a href="#preorder" class="mt-8 bg-accent text-primary py-3 rounded-full font-medium">Pre-Order</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+        <div class="container mx-auto px-6 pt-24 pb-16 md:pt-32 md:pb-24">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 animate__animated animate__fadeIn">Smart Recovery</h1>
+                <p class="text-xl md:text-3xl text-accent mb-10 animate__animated animate__fadeIn animate__delay-1s">
+                    Starts from the ground up</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#preorder"
+                        class="bg-accent text-primary px-8 py-4 rounded-full font-medium hover:bg-accentDark transition transform hover:-translate-y-1">
+                        Pre-Order Now
+                    </a>
+                    <a href="#technology"
+                        class="border border-secondary text-secondary px-8 py-4 rounded-full font-medium hover:bg-secondary hover:text-primary transition">
+                        Learn More →
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-4xl mx-auto px-6 pb-20 animate__animated animate__fadeIn animate__delay-2s">
+            <img src="images/test-sandal.jpeg" alt="I-Revive Smart Footwear" class="w-full rounded-xl shadow-2xl">
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="py-20" id="technology">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">Everyday Wellness, Everywhere</h2>
+                <p class="text-xl text-gray-300">i-Revive adapts to your lifestyle</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gradient-to-br from-gray-900 to-primary p-8 rounded-xl border border-gray-800">
+                    <h3 class="text-xl font-bold mb-3">For Athletes</h3>
+                    <p class="text-gray-300">Accelerate recovery between training sessions</p>
+                </div>
+                <div class="bg-gradient-to-br from-gray-900 to-primary p-8 rounded-xl border border-gray-800">
+                    <h3 class="text-xl font-bold mb-3">For Travelers</h3>
+                    <p class="text-gray-300">Prevent swelling and DVT on long flights</p>
+                </div>
+                <div class="bg-gradient-to-br from-gray-900 to-primary p-8 rounded-xl border border-gray-800">
+                    <h3 class="text-xl font-bold mb-3">For Professionals</h3>
+                    <p class="text-gray-300">Combat sedentary fatigue while you work</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Deep Dive -->
+    <section class="py-20 bg-primary">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">How It Works</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <!-- Left: Steps -->
+                <div class="space-y-16">
+                    <!-- Step 1 -->
+                    <div class="flex items-start space-x-6">
+                        <div class="text-accent text-4xl font-bold">1</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-secondary">Slip On</h3>
+                            <p class="text-gray-300">
+                                Lightweight, wireless footwear designed for all-day wear — no setup required.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="flex items-start space-x-6">
+                        <div class="text-accent text-4xl font-bold">2</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-secondary">Activate Recovery</h3>
+                            <p class="text-gray-300">
+                                EMS and TENS stimulate key foot muscles to reduce stiffness and improve circulation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="flex items-start space-x-6">
+                        <div class="text-accent text-4xl font-bold">3</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-secondary">Track Your Progress</h3>
+                            <p class="text-gray-300">
+                                Real-time bio-feedback via our app lets you monitor EMG signals, recovery cycles, and
+                                improvement over time.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="flex items-start space-x-6">
+                        <div class="text-accent text-4xl font-bold">4</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-secondary">Feel the Difference</h3>
+                            <p class="text-gray-300">
+                                Experience reduced fatigue, better posture, faster recovery, and long-term strength
+                                benefits.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Image -->
+                <div>
+                    <img src="images/app-interface.png" alt="I-Revive App Interface"
+                        class="w-full rounded-xl shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Validation -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">Backed by Science</h2>
+                <p class="text-xl text-gray-300">Developed with medical experts and clinical research</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center">
+                <div class="text-center p-6">
+                    <div class="text-accent text-4xl mb-4">⚖️</div>
+                    <p class="font-medium">Patent Pending</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-accent text-4xl mb-4">🇪🇺</div>
+                    <p class="font-medium">CE Approved</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-accent text-4xl mb-4">🏥</div>
+                    <p class="font-medium">IEC 60601</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-accent text-4xl mb-4">🇺🇸</div>
+                    <p class="font-medium">FDA Pending</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Order -->
+    <section class="py-20 bg-primary" id="preorder">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">Experience Smarter Recovery</h2>
+                <p class="text-xl text-gray-300 mb-10">Join the waitlist for our first production run</p>
+                <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                    <input type="email" placeholder="Your email"
+                        class="flex-grow px-6 py-4 rounded-full bg-gray-800 text-secondary border border-gray-700 focus:outline-none focus:ring-2 focus:ring-accent">
+                    <button type="submit"
+                        class="bg-accent text-primary px-8 py-4 rounded-full font-medium hover:bg-accentDark transition">
+                        Notify Me
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-primary">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-xl font-bold text-accent">CRAFTMYSTRENGTH</span>
+                </div>
+                <div class="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 text-center md:text-left">
+                    <a href="#" class="text-gray-400 hover:text-secondary transition">Privacy</a>
+                    <a href="#" class="text-gray-400 hover:text-secondary transition">Terms</a>
+                    <a href="contact.html" class="text-gray-400 hover:text-secondary transition">Contact</a>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p>© 2025 Craft My Strength. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+
+</html>
