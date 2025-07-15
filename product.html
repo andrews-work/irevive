@@ -10,8 +10,8 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#000000',
-                        secondary: '#FFFFFF',
+                        primary: '#FFFFFF',  // Now white (previously secondary)
+                        secondary: '#000000', // Now black (previously primary)
                         accent: '#D4AF37',
                         accentDark: '#B8860B',
                         darkBg: '#0A0A0A'
@@ -48,9 +48,9 @@
     <!-- Mobile Menu -->
     <div class="md:hidden hidden fixed inset-0 z-40 bg-primary pt-20 px-6" id="mobile-menu">
         <div class="flex flex-col space-y-6 text-center text-2xl">
-            <a href="index.html" class="py-3 border-b border-accent/20">Home</a>
-            <a href="product.html" class="py-3 border-b border-accent/20">I-Revive</a>
-            <a href="about.html" class="py-3 border-b border-accent/20">About</a>
+            <a href="index.html" class="py-3 border-b border-secondary/20">Home</a>
+            <a href="product.html" class="py-3 border-b border-secondary/20">I-Revive</a>
+            <a href="about.html" class="py-3 border-b border-secondary/20">About</a>
             <a href="#preorder" class="mt-8 bg-accent text-primary py-3 rounded-full font-medium">Pre-Order</a>
         </div>
     </div>
@@ -61,8 +61,8 @@
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                     <h1 class="text-4xl md:text-6xl font-bold mb-6">I-Revive</h1>
-                    <p class="text-xl text-gray-300 mb-8">Smart Recovery Footwear</p>
-                    <p class="text-lg text-gray-300 mb-8">
+                    <p class="text-xl text-secondary/80 mb-8">Smart Recovery Footwear</p>
+                    <p class="text-lg text-secondary/80 mb-8">
                         The world's first EMS & TENS-powered smart footwear designed to reduce fatigue, improve circulation, and accelerate recovery — wherever life takes you.
                     </p>
                     <a href="#preorder" class="inline-block bg-accent text-primary px-8 py-4 rounded-full font-medium hover:bg-accentDark transition">
@@ -76,84 +76,84 @@
         </div>
     </section>
 
-<!-- Key Features Carousel -->
-<section class="py-32 bg-primary overflow-hidden">
-    <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">What Makes I-Revive Different?</h2>
-            <p class="text-xl text-gray-300">Unlike massagers or passive footwear, I-Revive is proactive recovery</p>
-        </div>
-    </div>
-
-    <div class="relative">
-        <!-- Carousel Container -->
-        <div class="flex overflow-x-auto snap-x snap-mandatory whitespace-nowrap scroll-smooth py-10 hide-scrollbar pl-[5vw]" id="features-carousel">
-            <!-- Feature 1 -->
-            <div class="snap-start inline-flex w-[90vw] max-w-7xl mr-[1vw] flex-shrink-0">
-                <div class="relative rounded-3xl overflow-hidden border border-gray-800 h-[80vh] w-full">
-                    <img src="images/medical-tech.jpg" alt="Medical Technology" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 p-12 text-left">
-                        <h3 class="text-3xl font-bold mb-4 text-accent">Medical-Grade Technology</h3>
-                        <p class="text-gray-300 text-xl max-w-xl">
-                            Combines EMS for muscle activation and TENS for pain relief — trusted by physiotherapists for decades.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Feature 2 -->
-            <div class="snap-start inline-flex w-[90vw] max-w-7xl mr-[1vw] flex-shrink-0">
-                <div class="relative rounded-3xl overflow-hidden border border-gray-800 h-[80vh] w-full">
-                    <img src="images/biofeedback.jpg" alt="Biofeedback" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 p-12 text-left">
-                        <h3 class="text-3xl font-bold mb-4 text-accent">Real-Time Biofeedback</h3>
-                        <p class="text-gray-300 text-xl max-w-xl">
-                            Tracks muscle response (EMG) and blood flow (PI%) via our companion app.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Feature 3 -->
-            <div class="snap-start inline-flex w-[90vw] max-w-7xl mr-[1vw] flex-shrink-0">
-                <div class="relative rounded-3xl overflow-hidden border border-gray-800 h-[80vh] w-full">
-                    <img src="images/comfort.jpg" alt="Comfort" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 p-12 text-left">
-                        <h3 class="text-3xl font-bold mb-4 text-accent">Daily-Wear Comfort</h3>
-                        <p class="text-gray-300 text-xl max-w-xl">
-                            Designed for all-day use at home, work, or travel — not just therapy sessions.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Feature 4 -->
-            <div class="snap-start inline-flex w-[90vw] max-w-7xl mr-[5vw] flex-shrink-0">
-                <div class="relative rounded-3xl overflow-hidden border border-gray-800 h-[80vh] w-full">
-                    <img src="images/personalized.jpg" alt="Personalized Therapy" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 p-12 text-left">
-                        <h3 class="text-3xl font-bold mb-4 text-accent">Personalized Therapy</h3>
-                        <p class="text-gray-300 text-xl max-w-xl">
-                            Adapts to your needs whether you're an athlete, traveler, or desk worker.
-                        </p>
-                    </div>
-                </div>
+    <!-- Key Features Carousel -->
+    <section class="py-32 bg-primary overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">What Makes I-Revive Different?</h2>
+                <p class="text-xl text-secondary/80">Unlike massagers or passive footwear, I-Revive is proactive recovery</p>
             </div>
         </div>
 
-        <!-- Navigation Dots -->
-        <div class="flex justify-center mt-8 space-x-2">
-            <button class="w-3 h-3 rounded-full bg-gray-700 hover:bg-accent transition dot" data-index="0"></button>
-            <button class="w-3 h-3 rounded-full bg-gray-700 hover:bg-accent transition dot" data-index="1"></button>
-            <button class="w-3 h-3 rounded-full bg-gray-700 hover:bg-accent transition dot" data-index="2"></button>
-            <button class="w-3 h-3 rounded-full bg-gray-700 hover:bg-accent transition dot" data-index="3"></button>
+        <div class="relative">
+            <!-- Carousel Container -->
+            <div class="flex overflow-x-auto snap-x snap-mandatory whitespace-nowrap scroll-smooth py-10 hide-scrollbar pl-[5vw]" id="features-carousel">
+                <!-- Feature 1 -->
+                <div class="snap-start inline-flex w-[90vw] max-w-7xl mr-[1vw] flex-shrink-0">
+                    <div class="relative rounded-3xl overflow-hidden border border-secondary/20 h-[80vh] w-full">
+                        <img src="images/medical-tech.jpg" alt="Medical Technology" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-secondary/80"></div>
+                        <div class="absolute bottom-0 left-0 p-12 text-left">
+                            <h3 class="text-3xl font-bold mb-4 text-accent">Medical-Grade Technology</h3>
+                            <p class="text-secondary/80 text-xl max-w-xl">
+                                Combines EMS for muscle activation and TENS for pain relief — trusted by physiotherapists for decades.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="snap-start inline-flex w-[90vw] max-w-7xl mr-[1vw] flex-shrink-0">
+                    <div class="relative rounded-3xl overflow-hidden border border-secondary/20 h-[80vh] w-full">
+                        <img src="images/biofeedback.jpg" alt="Biofeedback" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-secondary/80"></div>
+                        <div class="absolute bottom-0 left-0 p-12 text-left">
+                            <h3 class="text-3xl font-bold mb-4 text-accent">Real-Time Biofeedback</h3>
+                            <p class="text-secondary/80 text-xl max-w-xl">
+                                Tracks muscle response (EMG) and blood flow (PI%) via our companion app.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="snap-start inline-flex w-[90vw] max-w-7xl mr-[1vw] flex-shrink-0">
+                    <div class="relative rounded-3xl overflow-hidden border border-secondary/20 h-[80vh] w-full">
+                        <img src="images/comfort.jpg" alt="Comfort" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-secondary/80"></div>
+                        <div class="absolute bottom-0 left-0 p-12 text-left">
+                            <h3 class="text-3xl font-bold mb-4 text-accent">Daily-Wear Comfort</h3>
+                            <p class="text-secondary/80 text-xl max-w-xl">
+                                Designed for all-day use at home, work, or travel — not just therapy sessions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="snap-start inline-flex w-[90vw] max-w-7xl mr-[5vw] flex-shrink-0">
+                    <div class="relative rounded-3xl overflow-hidden border border-secondary/20 h-[80vh] w-full">
+                        <img src="images/personalized.jpg" alt="Personalized Therapy" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-secondary/80"></div>
+                        <div class="absolute bottom-0 left-0 p-12 text-left">
+                            <h3 class="text-3xl font-bold mb-4 text-accent">Personalized Therapy</h3>
+                            <p class="text-secondary/80 text-xl max-w-xl">
+                                Adapts to your needs whether you're an athlete, traveler, or desk worker.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Dots -->
+            <div class="flex justify-center mt-8 space-x-2">
+                <button class="w-3 h-3 rounded-full bg-accent/50 hover:bg-accent transition dot" data-index="0"></button>
+                <button class="w-3 h-3 rounded-full bg-accent/50 hover:bg-accent transition dot" data-index="1"></button>
+                <button class="w-3 h-3 rounded-full bg-accent/50 hover:bg-accent transition dot" data-index="2"></button>
+                <button class="w-3 h-3 rounded-full bg-accent/50 hover:bg-accent transition dot" data-index="3"></button>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- App Features -->
     <section class="py-20 bg-primary">
@@ -192,111 +192,197 @@
     </section>
 
     <!-- Use Cases -->
-<section class="py-20 bg-primary">
-    <div class="container mx-auto px-6">
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Use Case 1 -->
-            <div class="p-8 rounded-lg bg-gray-900 border border-gray-800 relative">
-                <div class="absolute -top-3 -left-3 w-12 h-12 bg-accent text-primary flex items-center justify-center text-xl font-bold rounded-full border-2 border-gray-800">
-                    01
+    <section class="py-20 bg-primary">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Use Case 1 -->
+                <div class="p-8 rounded-lg bg-primary border border-secondary/20 relative">
+                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-accent text-primary flex items-center justify-center text-xl font-bold rounded-full border-2 border-secondary/20">
+                        01
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Frequent Travelers</h3>
+                    <p class="text-secondary/80">
+                        Prevent swelling and DVT during long flights with scientifically tuned pulses.
+                    </p>
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-secondary">Frequent Travelers</h3>
-                <p class="text-gray-300">
-                    Prevent swelling and DVT during long flights with scientifically tuned pulses.
-                </p>
-            </div>
-            
-            <!-- Use Case 2 -->
-            <div class="p-8 rounded-lg bg-gray-900 border border-gray-800 relative">
-                <div class="absolute -top-3 -left-3 w-12 h-12 bg-accent text-primary flex items-center justify-center text-xl font-bold rounded-full border-2 border-gray-800">
-                    02
+                
+                <!-- Use Case 2 -->
+                <div class="p-8 rounded-lg bg-primary border border-secondary/20 relative">
+                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-accent text-primary flex items-center justify-center text-xl font-bold rounded-full border-2 border-secondary/20">
+                        02
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Athletes</h3>
+                    <p class="text-secondary/80">
+                        Accelerate post-workout recovery and reduce muscle soreness.
+                    </p>
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-secondary">Athletes</h3>
-                <p class="text-gray-300">
-                    Accelerate post-workout recovery and reduce muscle soreness.
-                </p>
-            </div>
-            
-            <!-- Use Case 3 -->
-            <div class="p-8 rounded-lg bg-gray-900 border border-gray-800 relative">
-                <div class="absolute -top-3 -left-3 w-12 h-12 bg-accent text-primary flex items-center justify-center text-xl font-bold rounded-full border-2 border-gray-800">
-                    03
+                
+                <!-- Use Case 3 -->
+                <div class="p-8 rounded-lg bg-primary border border-secondary/20 relative">
+                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-accent text-primary flex items-center justify-center text-xl font-bold rounded-full border-2 border-secondary/20">
+                        03
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Office Professionals</h3>
+                    <p class="text-secondary/80">
+                        Stimulate circulation passively while you focus on work.
+                    </p>
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-secondary">Office Professionals</h3>
-                <p class="text-gray-300">
-                    Stimulate circulation passively while you focus on work.
-                </p>
-            </div>
-            
-            <!-- Use Case 4 -->
-            <div class="p-8 rounded-lg bg-gray-900 border border-gray-800 relative">
-                <div class="absolute -top-3 -left-3 w-12 h-12 bg-accent text-primary flex items-center justify-center text-xl font-bold rounded-full border-2 border-gray-800">
-                    04
+                
+                <!-- Use Case 4 -->
+                <div class="p-8 rounded-lg bg-primary border border-secondary/20 relative">
+                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-accent text-primary flex items-center justify-center text-xl font-bold rounded-full border-2 border-secondary/20">
+                        04
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Post-Surgery Patients</h3>
+                    <p class="text-secondary/80">
+                        Reduce foot pain and nerve-related stiffness with zero complexity.
+                    </p>
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-secondary">Post-Surgery Patients</h3>
-                <p class="text-gray-300">
-                    Reduce foot pain and nerve-related stiffness with zero complexity.
-                </p>
-            </div>
-            
-            <!-- Use Case 5 -->
-            <div class="p-8 rounded-lg bg-gray-900 border border-gray-800 relative">
-                <div class="absolute -top-3 -left-3 w-12 h-12 bg-accent text-primary flex items-center justify-center text-xl font-bold rounded-full border-2 border-gray-800">
-                    05
+                
+                <!-- Use Case 5 -->
+                <div class="p-8 rounded-lg bg-primary border border-secondary/20 relative">
+                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-accent text-primary flex items-center justify-center text-xl font-bold rounded-full border-2 border-secondary/20">
+                        05
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Weekend Warriors</h3>
+                    <p class="text-secondary/80">
+                        Relieve muscle fatigue after tennis, hiking, or long walks.
+                    </p>
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-secondary">Weekend Warriors</h3>
-                <p class="text-gray-300">
-                    Relieve muscle fatigue after tennis, hiking, or long walks.
-                </p>
-            </div>
-            
-            <!-- Use Case 6 -->
-            <div class="p-8 rounded-lg bg-gray-900 border border-gray-800 relative">
-                <div class="absolute -top-3 -left-3 w-12 h-12 bg-accent text-primary flex items-center justify-center text-xl font-bold rounded-full border-2 border-gray-800">
-                    06
+                
+                <!-- Use Case 6 -->
+                <div class="p-8 rounded-lg bg-primary border border-secondary/20 relative">
+                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-accent text-primary flex items-center justify-center text-xl font-bold rounded-full border-2 border-secondary/20">
+                        06
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Home Relaxation</h3>
+                    <p class="text-secondary/80">
+                        Turn TV time into recovery time with smart stimulation.
+                    </p>
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-secondary">Home Relaxation</h3>
-                <p class="text-gray-300">
-                    Turn TV time into recovery time with smart stimulation.
-                </p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Certifications -->
     <section class="py-20 bg-primary">
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6">Backed by Science</h2>
-                <p class="text-xl text-gray-300">Developed with medical experts and built to clinical standards</p>
+                <p class="text-xl text-secondary/80">Developed with medical experts and built to clinical standards</p>
             </div>
             <div class="flex flex-wrap justify-center gap-8 md:gap-16">
                 <div class="text-center">
                     <div class="text-accent text-3xl mb-2">⚖️</div>
-                    <p class="text-gray-300">Patent Pending</p>
+                    <p class="text-secondary/80">Patent Pending</p>
                 </div>
                 <div class="text-center">
                     <div class="text-accent text-3xl mb-2">🇪🇺</div>
-                    <p class="text-gray-300">CE Approved</p>
+                    <p class="text-secondary/80">CE Approved</p>
                 </div>
                 <div class="text-center">
                     <div class="text-accent text-3xl mb-2">🏥</div>
-                    <p class="text-gray-300">IEC 60601 Certified</p>
+                    <p class="text-secondary/80">IEC 60601 Certified</p>
                 </div>
                 <div class="text-center">
                     <div class="text-accent text-3xl mb-2">🇺🇸</div>
-                    <p class="text-gray-300">FDA 510(k) Pending</p>
+                    <p class="text-secondary/80">FDA 510(k) Pending</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Innovative Solutions -->
+    <section class="py-20 bg-primary">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">OUR INNOVATIVE SOLUTIONS</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Solution 1 -->
+                <div class="p-8 rounded-lg bg-primary border border-secondary/20">
+                    <h3 class="text-2xl font-bold mb-4 text-accent">Electrostimulation for Foot Health</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            <span><strong>EMS</strong> (Electrical Muscle Stimulation): Activates foot muscles, reducing fatigue & stiffness.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            <span><strong>TENS</strong> (Transcutaneous Electrical Nerve Stimulation): Enhances blood flow, relieving pain & improving circulation.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Solution 2 -->
+                <div class="p-8 rounded-lg bg-primary border border-secondary/20">
+                    <h3 class="text-2xl font-bold mb-4 text-accent">EMG Monitoring for Foot Performance</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            <span><strong>EMG (Electromyography):</strong> Measures real-time muscle activity to ensure optimal EMS response.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            <span>Tracks neuromuscular engagement in foot and calf muscles for personalized therapy.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Solution 3 -->
+                <div class="p-8 rounded-lg bg-primary border border-secondary/20">
+                    <h3 class="text-2xl font-bold mb-4 text-accent">Real-Time Bio-Signal Monitoring</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            <span>Tracks blood circulation, nerve health, fatigue levels and muscle activity.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            <span>Provides data-driven insights for foot wellness.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Solution 4 -->
+                <div class="p-8 rounded-lg bg-primary border border-secondary/20">
+                    <h3 class="text-2xl font-bold mb-4 text-accent">Seamless Wearable Experience</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            <span>Lightweight, Wireless & Rechargeable.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            <span>Slip-resistant, shock-proof design for daily wear in any lifestyle setting.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Solution 5 -->
+                <div class="p-8 rounded-lg bg-primary border border-secondary/20">
+                    <h3 class="text-2xl font-bold mb-4 text-accent">Smart Companion App</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            <span>Track EMG, blood oxygen levels, & thermal imaging data</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            <span>Customize sessions and visualize recovery progress</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> 
+
     <!-- Pre-Order CTA -->
     <section class="py-20 bg-primary" id="preorder">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-6">Experience Smarter Recovery</h2>
-            <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+            <p class="text-xl text-secondary/80 mb-10 max-w-2xl mx-auto">
                 Join our limited first production run and be among the first to experience I-Revive
             </p>
             <a href="#preorder" class="inline-block bg-accent text-primary px-10 py-4 rounded-full text-lg font-bold hover:bg-accentDark transition">
@@ -306,7 +392,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 bg-primary border-t border-accent/20">
+    <footer class="py-12 bg-primary border-t border-secondary/20">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">
@@ -315,12 +401,12 @@
                     </a>
                 </div>
                 <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-secondary transition">Privacy</a>
-                    <a href="#" class="text-gray-400 hover:text-secondary transition">Terms</a>
-                    <a href="#" class="text-gray-400 hover:text-secondary transition">Contact</a>
+                    <a href="#" class="text-secondary/80 hover:text-secondary transition">Privacy</a>
+                    <a href="#" class="text-secondary/80 hover:text-secondary transition">Terms</a>
+                    <a href="#" class="text-secondary/80 hover:text-secondary transition">Contact</a>
                 </div>
             </div>
-            <div class="mt-12 pt-8 border-t border-accent/10 text-center text-gray-500">
+            <div class="mt-12 pt-8 border-t border-secondary/10 text-center text-secondary/80">
                 <p>© 2025 Craft My Strength. All rights reserved.</p>
             </div>
         </div>
@@ -375,7 +461,7 @@
             function updateActiveDot(index) {
                 dots.forEach((dot, i) => {
                     dot.classList.toggle('bg-accent', i == index);
-                    dot.classList.toggle('bg-gray-700', i != index);
+                    dot.classList.toggle('bg-accent/50', i != index);
                 });
             }
     
